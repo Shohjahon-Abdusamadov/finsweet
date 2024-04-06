@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkBlue: rgba(35, 37, 54, 1);
+  --gray: rgba(217, 217, 217, 1);
+  --lightOrange: rgba(255, 211, 175, 1);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.center {
+  max-width: 121rem;
+  padding-inline: 1rem;
+  box-sizing: content-box;
+  margin: auto;
+}
+
+header {
+  background-color: var(--darkBlue);
+  display: block;
+  margin-bottom: 9.6rem;
+}
+header a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+}
+header .navigation .logo {
+  padding-block: 2.8rem;
+}
+header .navigation .nav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+header .navigation .nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3.2rem;
+}
+header .navigation .nav ul li {
+  border: solid var(--darkBlue);
+  padding-block: 2.8rem;
+}
+header .navigation .nav ul a {
+  text-decoration: none;
+  color: var(--gray);
+}
+header .navigation .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navigation .link .material-symbols-outlined {
+  display: none;
+  color: white;
+}
+header .navigation .link a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--lightOrange);
+  text-decoration: none;
+}
+header .navigation .link a .material-symbols-outlined {
+  display: block;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  white-space: wrap;
+}
+section h1 {
+  font-weight: 900;
+  font-size: clamp(5em, 50%, 25rem);
+  background: url(./images/Image.png) 24%;
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+section h2 {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+section h3 {
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+section p {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+section .career--primary img {
+  position: absolute;
+  left: 79.9%;
+}
+section .career__secondary {
+  max-width: 624px;
+}
+
+@media screen and (width < 850px) {
+  header nav {
+    display: none;
+  }
+  header .nav .material-symbols-outlined {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

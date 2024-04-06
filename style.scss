@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --darkBlue: rgba(35, 37, 54, 1);
+    --gray: rgba(217, 217, 217, 1);
+    --lightOrange: rgba(255, 211, 175, 1);
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+.center {
+    max-width: 121rem;
+    padding-inline: 1rem;
+    box-sizing: content-box;
+    margin: auto;
+}
+
+
+header {
+    background-color: var(--darkBlue);
+    display: block;
+    margin-bottom: 9.6rem;
+
+    a {
+        font-family: "Poppins", sans-serif;    
+        font-size: 1.6rem;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            padding-block: 2.8rem;
+        }
+    
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 3.2rem;
+    
+            ul {
+                display: flex;
+                list-style-type: none;
+                gap: 3.2rem;
+                
+                li {
+                    border: solid var(--darkBlue);
+                    padding-block: 2.8rem;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: var(--gray);
+                }
+            }
+        } 
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .material-symbols-outlined {
+                display: none;
+                color: white;
+            }
+            
+            a {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              color: var(--lightOrange);
+              text-decoration: none;
+              .material-symbols-outlined {
+                display: block;
+                color: white;
+                }
+            }
+        }
+    } 
+}
+
+    
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;  
+    text-align: center;
+    white-space: wrap;
+    h1 {
+        font-weight: 900;
+        font-size: clamp(5em, 50%, 25rem);
+        background: url(./images/Image.png) 24% ;
+        background-size: 100%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    
+    h2 {
+        font-weight: 500;  
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-weight: 700;  
+        font-size: 4.8rem;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+
+    .career--primary {
+        img {
+            position: absolute;
+            left: 79.9%;
+        }
+    }
+
+    .career__secondary {
+        max-width: 624px;
+    }
+}
+
+@media screen and (width < 850px) {
+    header {
+        nav {
+            display: none;
+            
+        }
+        .nav {
+            .material-symbols-outlined {
+                display: block;
+            }
+        }
+    }
+    
+}
+
